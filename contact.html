@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/3d3a927a60.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header js-header">
+    <h1 class="header__title js-header-title">
+      <img src="./images/header-logo.png" alt="ExciteCode" class="header__logo">
+    </h1>
+    <nav class="header__nav lg-none">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">TOP</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">ABOUT</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">SERVICE</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">WORKS</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">NEWS</a>
+        </li>
+        <li class="header__nav-item header__cta">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="#" class="header__nav-link header__cta-button">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger lg-show js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ドロワーメニュー表示時のアニメーション用 -->
+    <div class="background-circle"></div>
+
+    <!-- ドロワーメニュー -->
+    <div class="drawer js-drawer">
+      <div class="drawer__inner js-drawer-inner">
+        <img src="./images/drawer-logo.png" alt="ExciteCode" class="drawer__logo">
+        <ul class="drawer__list js-drawer-list">
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">TOP</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">ABOUT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">SERVICE</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">WORKS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">NEWS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">CONTACT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">プライバシーポリシー</a>
+          </li>
+        </ul>
+        <ul class="drawer__sns-list js-drawer-list">
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- fv -->
+    <div class="fv js-fv">
+      <div class="fv__inner">
+        <div class="fv__imagearea">
+          <picture class="js-fv">
+            <source srcset="./images/contact-fv-pc.jpg" media="(min-width:493px)">
+            <img src="./images/contact-fv-sp.jpg" alt="ドライブ中の車のサイドミラーの写真">
+          </picture>
+          <div class="fv__title js-title">
+            <h2 class="fv__maintitle">Contact</h2>
+            <p class="fv__subtitle">お問い合わせ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact">
+      <div class="contact__inner">
+        <p class="contact__text">
+          弊社へのお問い合わせは<br>下記フォームより受け付けております。<br>担当者が確認後、折り返しご連絡させていただきます。
+        </p>
+        <!-- form -->
+        <div class="form">
+          <dl class="form__list">
+            <div class="form__field">
+              <dt class="form__label">
+                <label for="name">お名前<span class="form__required">*</span></label>
+              </dt>
+              <dd class="form__data"><input type="text" id="your-name" name="your-name" class="form__input" placeholder="【例】田中太郎" required></dd>
+            </div>
+            <div class="form__field">
+              <dt class="form__label"><label for="phone">電話番号</label></dt>
+              <dd class="form__data"><input type="tel" id="phone" name="phone" class="form__input" placeholder="【例】000-0000-0000"></dd>
+            </div>
+            <div class="form__field">
+              <dt class="form__label"><label for="email">メールアドレス<span class="form__required">*</span></label></dt>
+              <dd class="form__data"><input type="email" id="your-email" name="your-email" class="form__input" placeholder="【例】hoge@hogehoge.com" required></dd>
+            </div>
+            <div class="form__field">
+              <dt class="form__label">お問い合わせの種類<span class="form__required">*</span>（ドロップダウンメニュー式）</dt>
+              <dd class="form__data-select">
+                <select id="category" name="category" class="form__select" required>
+                  <option value="">選択してください</option>
+                  <option value="type1">種類1</option>
+                  <option value="type2">種類2</option>
+                  <option value="type3">種類3</option>
+                </select>
+              </dd>
+            </div>
+            <div class="form__field">
+              <dt class="form__label">お問い合わせの種類<span class="form__required">*</span>（ラジオボタン式）</dt>
+              <dd class="form__data-radio">
+                <span class="wpcf7-form-control-wrap" data-name="radio-category">
+                  <span class="wpcf7-form-control wpcf7-radio form__radio" id="radio-test">
+                    <span class="wpcf7-list-item first">
+                      <label>
+                        <input type="radio" name="radio-category" value="種類1" checked="checked">
+                        <span class="wpcf7-list-item-label">種類1</span>
+                      </label>
+                    </span>
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input type="radio" name="radio-test" value="種類2">
+                        <span class="wpcf7-list-item-label">種類2</span>
+                      </label>
+                    </span>
+                    <span class="wpcf7-list-item last">
+                      <label>
+                        <input type="radio" name="radio-test" value="種類3">
+                        <span class="wpcf7-list-item-label">種類3</span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </dd>
+            </div>
+            <div class="form__field">
+              <dt class="form__label"><label for="message">お問い合わせの内容<span class="form__required">*</span></label></dt>
+              <dd class="form__data"><textarea id="message" name="message" class="form__textarea" required></textarea></dd>
+            </div>
+            <div class="form__field">
+              <dt class="form__label">個人情報の取り扱いについて<span class="form__required">*</span></dt>
+              <dd class="form__data">
+                <span class="wpcf7-form-control-wrap" data-name="privacy">
+                  <span class="wpcf7-form-control wpcf7-acceptance">
+                    <span class="wpcf7-list-item">
+                      <label>
+                        <input type="checkbox" name="privacy" class="form__checkbox" id="privacy">
+                        <span class="wpcf7-list-item-label">同意します
+                        </span>
+                      </label>
+                    </span>
+                  </span>
+                </span>
+              </dd>
+            </div>
+          </dl>
+          <div class="form__acceptance">
+            <p class="form__acceptance-text">
+              【個人情報の取り扱い】<br>この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。
+            </p>
+          </div>
+          <div class="form__submit-button">
+            <input class="form__submit-input" type="submit" value="確認画面へ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="./images/drawer-logo.png" alt="ExciteCode" class="footer__image">
+        </div>
+        <small class="footer__copyright">&#64;2022 ExciteCode Automobile</small>
+        <ul class="footer__sns-list">
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-facebook footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-twitter footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-instagram footer__sns-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">TOP</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">ABOUT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">SERVICE</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">WORKS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">NEWS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">CONTACT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">プライバシーポリシー</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

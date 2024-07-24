@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/news_detail.css">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/3d3a927a60.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header js-header">
+    <h1 class="header__title js-header-title">
+      <img src="./images/header-logo.png" alt="ExciteCode" class="header__logo">
+    </h1>
+    <nav class="header__nav lg-none">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">TOP</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">ABOUT</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">SERVICE</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">WORKS</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">NEWS</a>
+        </li>
+        <li class="header__nav-item header__cta">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="#" class="header__nav-link header__cta-button">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger lg-show js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ドロワーメニュー表示時のアニメーション用 -->
+    <div class="background-circle"></div>
+
+    <!-- ドロワーメニュー -->
+    <div class="drawer js-drawer">
+      <div class="drawer__inner js-drawer-inner">
+        <img src="./images/drawer-logo.png" alt="ExciteCode" class="drawer__logo">
+        <ul class="drawer__list js-drawer-list">
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">TOP</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">ABOUT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">SERVICE</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">WORKS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">NEWS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">CONTACT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">プライバシーポリシー</a>
+          </li>
+        </ul>
+        <ul class="drawer__sns-list js-drawer-list">
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- article -->
+    <section class="article">
+      <div class="article__inner">
+        <div class="article__main-news">
+          <ul class="article__tag-list">
+            <li class="article__tag-item">
+              <span class="article__tag tag">トピックス</span>
+            </li>
+            <li class="article__tag-item">
+              <span class="article__tag tag">イベント・キャンペーン</span>
+            </li>
+          </ul>
+          <h2 class="article__title">
+            2022年10月8日・9日・10日の3日間、試乗車フェアを開催します
+          </h2>
+          <div class="article__tag-item">
+            <time class="article__date date" datetime="2022-09-02">2022.09.02</time>
+          </div>
+          <div class="article__thumbnail">
+            <img src="./images/news_thumnail01.jpg" alt="人が車のハンドルを握っている写真" class="article__image">
+          </div>
+          <h2 class="article__heading">ここに見出し2が入ります</h2>
+          <p class="article__text">
+            本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。
+          </p>
+          <p class="article__text">
+            本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。
+          </p>
+          <h2 class="article__subheading">ここに見出し3が入ります</h2>
+          <p class="article__text">
+            本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。
+          </p>
+          <p class="article__text">
+            本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。
+          </p>
+          <ul class="article__list">
+            <li class="article__item">
+              <p class="article__item-text">リスト</p>
+            </li>
+            <li class="article__item">
+              <p class="article__item-text">リストリスト</p>
+            </li>
+            <li class="article__item">
+              <p class="article__item-text">リストリストリスト</p>
+            </li>
+          </ul>
+          <ul class="article__button-list">
+            <li class="article__button-back">
+              <a href="#" class="article__link article__link--back">前の記事へ</a>
+            </li>
+            <li class="article__button-forward">
+              <a href="#" class="article__link article__lick--forward">次の記事へ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="article__subcolumn">
+          <div class="article__related">
+            <h2 class="article__related-title subcolumn-title">最新記事</h2>
+            <ul class="article__related-list">
+              <li class="article__related-item">
+                <img src="./images/news_thumnail02.jpg" alt="人が車のハンドルを握っている写真" class="article__related-thumbnail">
+                <div class="article__related-content">
+                  <a href="#" class="article__related-text">
+                    2022年10月8日・9日・10日の3日間、試乗車フェアを開催します
+                  </a>
+                  <div class="article__related-datetag">
+                    <time class="news__date date" datetime="2022-09-02">2022.09.02</time>
+                  </div>
+                </div>
+              </li>
+              <li class="article__related-item">
+                <img src="./images/news_thumnail03.jpg" alt="白いベンツの写真" class="article__related-thumbnail">
+                <div class="article__related-content">
+                  <a href="#" class="article__related-text">
+                    【入庫車のご案内】メルセデスベンツG 350が入庫しました
+                  </a>
+                  <div class="article__related-datetag">
+                    <time class="news__date date" datetime="2022-08-23">2022.08.23</time>
+                  </div>
+                </div>
+              </li>
+              <li class="article__related-item">
+                <img src="./images/article-logo.jpg" alt="ExciteCode" class="article__related-thumbnail">
+                <div class="article__related-content">
+                  <a href="#" class="article__related-text">
+                    お盆休みのご案内
+                  </a>
+                  <div class="article__related-datetag">
+                    <time class="news__date date" datetime="2022-08-07">2022.08.07</time>
+                  </div>
+                </div>
+              </li>
+              <li class="article__related-item">
+                <img src="./images/news_thumnail04.jpg" alt="黒のjeepラングラーの写真" class="article__related-thumbnail">
+                <div class="article__related-content">
+                  <a href="#" class="article__related-text">
+                    【入庫車のご案内】JEEPラングラー アンリミテッドスポーツが入荷しまし
+                  </a>
+                  <div class="article__related-datetag">
+                    <time class="news__date date" datetime="2022-08-03">2022.08.03</time>
+                  </div>
+                </div>
+              </li>
+              <li class="article__related-item">
+                <img src="./images/article-logo.jpg" alt="ExciteCode" class="article__related-thumbnail">
+                <div class="article__related-content">
+                  <a href="#" class="article__related-text">
+                    タイトルが36文字以降は点々で表示されますタイトルが36文字以降は点々で...
+                  </a>
+                  <div class="article__related-datetag">
+                    <time class="news__date date" datetime="2022-07-26">2022.07.26</time>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="article__archive">
+            <h2 class="article__archive-title subcolumn-title">アーカイブ</h2>
+            <ul class="article__archive-list">
+              <li class="article__archive-item">
+                <a href="#" class="article__archive-link">2022年9月</a>
+              </li>
+              <li class="article__archive-item">
+                <a href="#" class="article__archive-link">2022年8月</a>
+              </li>
+              <li class="article__archive-item">
+                <a href="#" class="article__archive-link">2022年7月</a>
+              </li>
+            </ul>
+          </div>
+          <div class="article__category article__archive">
+            <h2 class="article__category-title subcolumn-title">アーカイブ</h2>
+            <ul class="article__category-list article__archive-list">
+              <li class="article__category-item article__archive-item">
+                <a href="#" class="article__category-link article__archive-link">2022年9月</a>
+              </li>
+              <li class="article__archive-item">
+                <a href="#" class="article__category-link article__archive-link">2022年8月</a>
+              </li>
+              <li class="article__archive-item">
+                <a href="#" class="article__category-link article__archive-link">2022年7月</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="contact__inner">
+        <picture>
+          <source srcset="./images/contact-pc.jpg" media="(min-width:768px)">
+          <img src="./images/contact-sp.jpg" alt="オレンジとシルバーの車が交互に並んでいる写真" class="contact__image">
+        </picture>
+        <div class="contact__content">
+          <p class="contact__text">
+            輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。
+          </p>
+          <a href="#" class="contact__button button">
+            <i class="fa-regular fa-envelope button__icon"></i>
+            <span class="button__text">お問い合わせ</span>
+          </a>
+          <a href="#" class="contact__tel-button button">
+            <i class="fa-solid fa-phone button__icon"></i>
+            <span class="button__text">
+              0000-000-000
+            </span>
+          </a>
+          <p class="contact__subtext">
+            受付時間 : 火曜日を除く 10：00〜18：00
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="./images/drawer-logo.png" alt="ExciteCode" class="footer__image">
+        </div>
+        <small class="footer__copyright">&#64;2022 ExciteCode Automobile</small>
+        <ul class="footer__sns-list">
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-facebook footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-twitter footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-instagram footer__sns-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">TOP</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">ABOUT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">SERVICE</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">WORKS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">NEWS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">CONTACT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">プライバシーポリシー</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

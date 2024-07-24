@@ -1,0 +1,33 @@
+@use "sass:math";
+//ブレイクポイントの値
+$breakpoints: (
+  sp: 375,
+  mp:493,
+  ps:513,
+  ms: 605,
+  md: 768,
+  mm:850,
+  ml: 970,
+  lg: 1024,
+  xl: 1440,
+);
+
+//メディアクエリー
+$mediaqueries: (
+  sp: "screen and (max-width: #{map-get($breakpoints,'sp')}px)",
+  mp: "screen and (max-width: #{map-get($breakpoints,'mp')}px)",
+  ps: "screen and (max-width: #{map-get($breakpoints,'ps')}px)",
+  ms: "screen and (max-width: #{map-get($breakpoints,'ms')}px)",
+  mm: "screen and (max-width: #{map-get($breakpoints,'mm')}px)",
+  md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+  ml: "screen and (max-width: #{map-get($breakpoints,'ml')}px)",
+  lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+  xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+);
+
+// ブレイクポイントの設定
+@mixin mq($mediaquery: md) {
+  @media #{map-get($mediaqueries, $mediaquery)} {
+    @content;
+  }
+}

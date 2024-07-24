@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/about.css">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/3d3a927a60.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header js-header">
+    <h1 class="header__title js-header-title">
+      <img src="./images/header-logo.png" alt="ExciteCode" class="header__logo">
+    </h1>
+    <nav class="header__nav lg-none">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">TOP</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">ABOUT</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">SERVICE</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">WORKS</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">NEWS</a>
+        </li>
+        <li class="header__nav-item header__cta">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="#" class="header__nav-link header__cta-button">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger lg-show js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ドロワーメニュー表示時のアニメーション用 -->
+    <div class="background-circle"></div>
+
+    <!-- ドロワーメニュー -->
+    <div class="drawer js-drawer">
+      <div class="drawer__inner js-drawer-inner">
+        <img src="./images/drawer-logo.png" alt="ExciteCode" class="drawer__logo">
+        <ul class="drawer__list js-drawer-list">
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">TOP</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">ABOUT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">SERVICE</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">WORKS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">NEWS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">CONTACT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">プライバシーポリシー</a>
+          </li>
+        </ul>
+        <ul class="drawer__sns-list js-drawer-list">
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- fv -->
+    <div class="fv js-fv">
+      <div class="fv__inner">
+        <div class="fv__imagearea">
+          <picture class="js-fv">
+            <source srcset="./images/about-fv-pc.jpg" media="(min-width:493px)">
+            <img src="./images/about-fv-sp.jpg" alt="お店の中に車が並んでいる写真">
+          </picture>
+          <div class="fv__title js-title">
+            <h2 class="fv__maintitle">About</h2>
+            <p class="fv__subtitle">私たちについて</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- catchcopy -->
+    <div class="catchcopy" id="catchcopy">
+      <div class="catchcopy__inner">
+        <ul class="catchcopy__link-list">
+          <li class="catchcopy__link-item">
+            <a href="#" class="catchcopy__link">経営理念</a>
+          </li>
+          <li class="catchcopy__link-item">
+            <a href="#" class="catchcopy__link">アクセス</a>
+          </li>
+          <li class="catchcopy__link-item">
+            <a href="#" class="catchcopy__link">会社概要</a>
+          </li>
+        </ul>
+        <h2 class="catchcopy__head">
+          国境を超え、メーカーを超え<br>
+          「型にはまらない」あなただけの歓びを
+        </h2>
+        <p class="catchcopy__text">
+          弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。<br class="md-none">
+          これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。
+        </p>
+      </div>
+    </div>
+
+    <!-- philosophy -->
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy__inner">
+        <div class="philosophy__content">
+          <div class="philosophy__heading section__heading">
+            <span class="philosophy__subtitle section__subtitle">経営理念</span>
+            <div class="philosophy__maintitle-area section__maintitle-area">
+              <h2 class="philosophy__maintitle section__maintitle">Philosophy</h2>
+              <span class="access__title-line section__title-line"></span>
+            </div>
+          </div>
+          <p class="philosophy__text">
+            「お客様とは一生涯のお付き合い」をモットーとし、同時に社員一人一人が責任と誇り、使命感を持ち日々の仕事にやりがいと喜びを感じることができる会社を目指します。そういう「社員満足」があってこそ、本当の「お客様に満足」が可能になり、そしてお客様のご満足がさらに社員の満足を高めてくれるからです。心の豊かさは楽とかゆとりとかいうより仕事の充実感に求めねばなりません。我々は現状に満足することなく挑戦し続けます。
+          </p>
+          <p class="philosophy__name">代表取締役　田中太郎</p>
+        </div>
+        <div class="philosophy__imagearea">
+          <picture>
+            <source srcset="./images/about-philosophy-pc.jpg" media="(min-width:768px)">
+            <img src="./images/about-philosophy-sp.jpg" alt="代表取締役の田中太郎の写真">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- access -->
+    <section class="access" id="access">
+      <div class="access__inner inner">
+        <div class="access section__heading">
+          <span class="access__subtitle section__subtitle">アクセス</span>
+          <div class="access__maintitle-area section__maintitle-area">
+            <h2 class="access__maintitle section__maintitle">Access</h2>
+            <span class="access__title-line section__title-line"></span>
+          </div>
+        </div>
+        <div class="access__address">
+          <span class="access__address-number">〒000-0000</span>
+          <span class="access__address-detail">〇〇県△△市□□区▲▲町0-0-0</span>
+        </div>
+        <div class="access__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9126.15350082241!2d140.863913198851!3d38.25760840304515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a283e0799aa05%3A0x727b43064030c31f!2z44K744OW44OzLeOCpOODrOODluODsyDku5nlj7DkuIDnlarnlLrvvJHkuIHnm67lupc!5e0!3m2!1sja!2sjp!4v1713776939479!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- company -->
+    <section class="company" id="company">
+      <div class="company__inner">
+        <div class="company__heading section__heading">
+          <span class="company__subtitle section__subtitle">会社概要</span>
+          <div class="company__maintitle-area section__maintitle-area">
+            <h2 class="company__maintitle section__maintitle">Company</h2>
+            <span class="company__title-line section__title-line"></span>
+          </div>
+        </div>
+        <ul class="company__list">
+          <li class="company__item">
+            <span class="company__overview">会社名</span>
+            <span class="company__detail">株式会社Excitecode</span>
+          </li>
+          <li class="company__item">
+            <span class="company__overview">所在地</span>
+            <span class="company__detail">〒000-0000</span>
+            <span class="company__detail company__detail-address">〇〇県△△市□□区▲▲町0-0-0</span>
+          </li>
+          <li class="company__item">
+            <span class="company__overview">設立</span>
+            <span class="company__detail">2015年12月10日</span>
+          </li>
+          <li class="company__item">
+            <span class="company__overview">代表取締役</span>
+            <span class="company__detail">田中　太郎</span>
+          </li>
+          <li class="company__item">
+            <span class="company__overview">事業内容</span>
+            <div class="company__detail-list">
+              <span class="company__detail company__detail-item">自動車販売（新車、中古車）古物No.第00000000号</span>
+              <span class="company__detail company__detail-item">自動車整備（国産車、輸入車）<br class="md-show">陸運局認証工場　認証No.0-0000</span>
+              <span class="company__detail company__detail-item">輸入車販売（自動車、自動車関連部品）</span>
+              <span class="company__detail company__detail-item">保険代理店<br class="md-show">（ABC損害保険株式会社、DFG損害保険株式会社）</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="company__slider swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img src="./images/about-slide01.jpg" class="swiper-slide__image" alt="車のボンネットの中を整備している写真">
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/about-slide02.jpg" class="swiper-slide__image" alt="人が車の鍵を持っている写真">
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/about-slide03.jpg" class="swiper-slide__image" alt="女性が車の説明を聞いている写真">
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/about-slide04.jpg" class="swiper-slide__image" alt="人が車のタイヤを点検している写真">
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/about-slide05.jpg" class="swiper-slide__image" alt="男性が車の下側を整備している写真">
+        </li>
+        <li class="swiper-slide">
+          <img src="./images/about-slide06.jpg" class="swiper-slide__image" alt="人が車の側面を整備している写真">
+        </li>
+      </ul>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="contact__inner">
+        <picture>
+          <source srcset="./images/contact-pc.jpg" media="(min-width:768px)">
+          <img src="./images/contact-sp.jpg" alt="オレンジとシルバーの車が交互に並んでいる写真" class="contact__image">
+        </picture>
+        <div class="contact__content">
+          <p class="contact__text">
+            輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。
+          </p>
+          <a href="#" class="contact__button button">
+            <i class="fa-regular fa-envelope button__icon"></i>
+            <span class="button__text">お問い合わせ</span>
+          </a>
+          <a href="#" class="contact__tel-button button">
+            <i class="fa-solid fa-phone button__icon"></i>
+            <span class="button__text">
+              0000-000-000
+            </span>
+          </a>
+          <p class="contact__subtext">
+            受付時間 : 火曜日を除く 10：00〜18：00
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="./images/drawer-logo.png" alt="ExciteCode" class="footer__image">
+        </div>
+        <small class="footer__copyright">&#64;2022 ExciteCode Automobile</small>
+        <ul class="footer__sns-list">
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-facebook footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-twitter footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-instagram footer__sns-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">TOP</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">ABOUT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">SERVICE</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">WORKS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">NEWS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">CONTACT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">プライバシーポリシー</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/work.css">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/3d3a927a60.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header js-header">
+    <h1 class="header__title js-header-title">
+      <img src="./images/header-logo.png" alt="ExciteCode" class="header__logo">
+    </h1>
+    <nav class="header__nav lg-none">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">TOP</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">ABOUT</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">SERVICE</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">WORKS</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">NEWS</a>
+        </li>
+        <li class="header__nav-item header__cta">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="#" class="header__nav-link header__cta-button">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger lg-show js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ドロワーメニュー表示時のアニメーション用 -->
+    <div class="background-circle"></div>
+
+    <!-- ドロワーメニュー -->
+    <div class="drawer js-drawer">
+      <div class="drawer__inner js-drawer-inner">
+        <img src="./images/drawer-logo.png" alt="ExciteCode" class="drawer__logo">
+        <ul class="drawer__list js-drawer-list">
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">TOP</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">ABOUT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">SERVICE</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">WORKS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">NEWS</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">CONTACT</a>
+          </li>
+          <li class="drawer__item">
+            <a href="#" class="drawer__link">プライバシーポリシー</a>
+          </li>
+        </ul>
+        <ul class="drawer__sns-list js-drawer-list">
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="drawer__sns-item">
+            <a href="#" class="drawer__sns-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- fv -->
+    <div class="fv js-fv">
+      <div class="fv__inner">
+        <div class="fv__imagearea">
+          <picture class="js-fv">
+            <source srcset="./images/work-fv-pc.jpg" media="(min-width:493px)">
+            <img src="./images/work-fv-sp.jpg" alt="黄色のアウディの正面の写真">
+          </picture>
+          <div class="fv__title js-title">
+            <h2 class="fv__maintitle">Works</h2>
+            <p class="fv__subtitle">実績紹介</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- work -->
+    <section class="work" id="work">
+      <div class="work__inner inner">
+        <div class="work__column-left sticky">
+          <ul class="work__button-list js-news-button">
+            <li class="work__button-item">
+              <button class="work__tag-button">すべての実績</button>
+            </li>
+            <li class="work__button-item">
+              <button class="work__tag-button">購入サポート</button>
+            </li>
+            <li class="work__button-item">
+              <button class="work__tag-button">修理・整備</button>
+            </li>
+            <li class="work__button-item">
+              <button class="work__tag-button">車検・点検</button>
+            </li>
+          </ul>
+        </div>
+        <div class="work__column-right">
+          <ul class="work__list">
+            <li class="work__item js-news-article">
+              <picture class="work__thumbnail">
+                <source srcset="./images/work-thumbnail01.jpg" media="(min-width:768px)">
+                <img src="./images/work-thumbnail01-sp.jpg" alt="車の鍵を手に持っている写真" class="work__thumbnail-image">
+              </picture>
+              <div class="work__content">
+                <div class="work__tag-item">
+                  <span class="work__tag tag">トピックス</span>
+                </div>
+                <a href="#" class="work__link">
+                  2022年10月8日・9日・10日の3日間、試乗車フェアを開催します
+                </a>
+                <div class="work__tag-item work__tag-date">
+                  <time class="work__date date" datetime="2022-09-02">2022.09.02</time>
+                </div>
+              </div>
+            </li>
+            <li class="work__item js-news-article">
+              <picture class="work__thumbnail">
+                <source srcset="./images/work-thumbnail02.jpg" media="(min-width:768px)">
+                <img src="./images/work-thumbnail02-sp.jpg" alt="車のリアバンパーを塗装している写真" class="work__thumbnail-image">
+              </picture>
+              <div class="work__content">
+                <div class="work__tag-item">
+                  <span class="work__tag tag">修理・整備</span>
+                </div>
+                <a href="#" class="work__link">
+                  愛車のリアバンパーに傷がついた｜板金修理と塗装で修理対応
+                </a>
+                <div class="work__tag-item work__tag-date">
+                  <time class="work__date date" datetime="2022-08-26">2022.08.26</time>
+                </div>
+              </div>
+            </li>
+            <li class="work__item js-news-article">
+              <picture class="work__thumbnail">
+                <source srcset="./images/work-thumbnail03.jpg" media="(min-width:768px)">
+                <img src="./images/work-thumbnail03-sp.jpg" alt="社員がお客さんに車の紹介をしている写真" class="work__thumbnail-image">
+              </picture>
+              <div class="work__content">
+                <div class="work__tag-item">
+                  <span class="work__tag tag">購入サポート</span>
+                </div>
+                <a href="#" class="work__link">
+                  はじめて輸入車の購入を検討中のお客様｜憧れのBMWを試乗し<br class="md-none">ていただきました
+                </a>
+                <div class="work__tag-item work__tag-date">
+                  <time class="work__date date" datetime="2022-08-20">2022.08.20</time>
+                </div>
+              </div>
+            </li>
+            <li class="work__item js-news-article">
+              <picture class="work__thumbnail">
+                <source srcset="./images/work-thumbnail04.jpg" media="(min-width:768px)">
+                <img src="./images/work-thumbnail04-sp.jpg" alt="黒い車の正面の写真" class="work__thumbnail-image">
+              </picture>
+              <div class="work__content">
+                <div class="work__tag-item">
+                  <span class="work__tag tag">車検・点検</span>
+                </div>
+                <a href="#" class="work__link">
+                  輸入車の車検・点検 | ランドローバーレンジローバーの車検と点<br class="md-none">検実績
+                </a>
+                <div class="work__tag-item work__tag-date">
+                  <time class="work__date date" datetime="2022-08-13">2022.08.13</time>
+                </div>
+              </div>
+            </li>
+            <li class="work__item js-news-article">
+              <picture class="work__thumbnail">
+                <source srcset="./images/work-thumbnail01.jpg" media="(min-width:768px)">
+                <img src="./images/work-thumbnail01-sp.jpg" alt="車の鍵を手に持っている写真" class="work__thumbnail-image">
+              </picture>
+              <div class="work__content">
+                <div class="work__tag-item">
+                  <span class="work__tag tag">修理・整備</span>
+                </div>
+                <a href="#" class="work__link">
+                  車のドアが開けられなくなった｜ドアロックの交換と車両の点検
+                </a>
+                <div class="work__tag-item work__tag-date">
+                  <time class="work__date date" datetime="2022-08-10">2022.08.10</time>
+                </div>
+              </div>
+            </li>
+            <li class="work__item js-news-article">
+              <picture class="work__thumbnail">
+                <source srcset="./images/work-thumbnail02.jpg" media="(min-width:768px)">
+                <img src="./images/work-thumbnail02-sp.jpg" alt="車のリアバンパーを塗装している写真" class="work__thumbnail-image">
+              </picture>
+              <div class="work__content">
+                <div class="work__tag-item">
+                  <span class="work__tag tag">修理・整備</span>
+                </div>
+                <a href="#" class="work__link">
+                  タイトルは30文字で改行して46文字以降は点々で表示されますタ<br class="md-none">イトルは30文字で改行して46...
+                </a>
+                <div class="work__tag-item work__tag-date">
+                  <time class="work__date date" datetime="2022-08-03">2022.08.03</time>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="contact__inner">
+        <picture>
+          <source srcset="./images/contact-pc.jpg" media="(min-width:768px)">
+          <img src="./images/contact-sp.jpg" alt="オレンジとシルバーの車が交互に並んでいる写真" class="contact__image">
+        </picture>
+        <div class="contact__content">
+          <p class="contact__text">
+            輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。
+          </p>
+          <a href="#" class="contact__button button">
+            <i class="fa-regular fa-envelope button__icon"></i>
+            <span class="button__text">お問い合わせ</span>
+          </a>
+          <a href="#" class="contact__tel-button button">
+            <i class="fa-solid fa-phone button__icon"></i>
+            <span class="button__text">
+              0000-000-000
+            </span>
+          </a>
+          <p class="contact__subtext">
+            受付時間 : 火曜日を除く 10：00〜18：00
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="./images/drawer-logo.png" alt="ExciteCode" class="footer__image">
+        </div>
+        <small class="footer__copyright">&#64;2022 ExciteCode Automobile</small>
+        <ul class="footer__sns-list">
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-facebook footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-twitter footer__sns-icon"></i>
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-instagram footer__sns-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">TOP</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">ABOUT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">SERVICE</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">WORKS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">NEWS</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">CONTACT</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">プライバシーポリシー</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
